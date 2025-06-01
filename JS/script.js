@@ -35,10 +35,10 @@ populateButtons("phrase", phrases, 4);
 
 //Update story display
 function updateStory() {
-  if (selectedWords.every(word => word !== "")) {
-    storyOutput.textContent = `${selectedWords[0]} ${selectedWords[1]} ${selectedWords[2]} ${selectedWords[3]} ${selectedWords[4]}.`;
-  }
+  const outputWords = selectedWords.map(word => word !== "" ? word : "_____");
+  storyOutput.textContent = `${outputWords[0]} ${outputWords[1]} ${outputWords[2]} ${outputWords[3]} ${outputWords[4]}.`;
 }
+
 
 //Surprise button logic
 document.getElementById("surprise-btn").addEventListener("click", () => {
