@@ -25,3 +25,10 @@ function populateButtons(category, array, index) {
     container.appendChild(btn);
   });
 }
+
+//Run this on page load to populate all columns
+populateButtons("subject", subjects, 0);
+populateButtons("verb", verbs, 1);
+populateButtons("adjective", adjectives, 2);
+populateButtons("noun", nouns, 3);
+populateButtons("phrase", phrases, 4);
