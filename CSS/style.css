@@ -61,3 +61,15 @@ h1 {
 .buttons button:hover {
   background-color: #ffd633;
 }
+
+/* Story output section */
+.story-output {
+  margin-top: 20px;
+}
+
+#story-text {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #444;
+}
