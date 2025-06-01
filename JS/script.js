@@ -32,3 +32,10 @@ populateButtons("verb", verbs, 1);
 populateButtons("adjective", adjectives, 2);
 populateButtons("noun", nouns, 3);
 populateButtons("phrase", phrases, 4);
+
+//Update story display
+function updateStory() {
+  if (selectedWords.every(word => word !== "")) {
+    storyOutput.textContent = `${selectedWords[0]} ${selectedWords[1]} ${selectedWords[2]} ${selectedWords[3]} ${selectedWords[4]}.`;
+  }
+}
