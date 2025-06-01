@@ -39,3 +39,20 @@ function updateStory() {
     storyOutput.textContent = `${selectedWords[0]} ${selectedWords[1]} ${selectedWords[2]} ${selectedWords[3]} ${selectedWords[4]}.`;
   }
 }
+
+//Surprise button logic
+document.getElementById("surprise-btn").addEventListener("click", () => {
+  selectedWords = [
+    getRandom(subjects),
+    getRandom(verbs),
+    getRandom(adjectives),
+    getRandom(nouns),
+    getRandom(phrases),
+  ];
+  updateStory();
+});
+
+// Helper function to grab a random word
+function getRandom(array) {
+  return array[Math.floor(Math.random() * array.length)];
+}
