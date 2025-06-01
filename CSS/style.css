@@ -73,3 +73,19 @@ h1 {
   margin: 20px 0;
   color: #444;
 }
+
+/* Surprise & Reset Buttons */
+#surprise-btn, #reset-btn {
+  background-color: #9cff57;
+  border: 2px solid #6cbf00;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#surprise-btn:hover, #reset-btn:hover {
+  background-color: #86ff33;
+}
