@@ -39,6 +39,10 @@ function updateStory() {
   storyOutput.textContent = `${outputWords[0]} ${outputWords[1]} ${outputWords[2]} ${outputWords[3]} ${outputWords[4]}.`;
 }
 
+document.getElementById("reset-btn").addEventListener("click", () => {
+  selectedWords = ["", "", "", "", ""];
+  updateStory();
+});
 
 //Surprise button logic
 document.getElementById("surprise-btn").addEventListener("click", () => {
