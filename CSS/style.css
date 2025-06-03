@@ -38,17 +38,10 @@ h1 {
   margin: 10px;
 }
 
-.word-column h2 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-  color: #0066cc;
-}
-
-/* Word buttons */
-.buttons button {
-  display: block;
+/* Button at top of each column */
+.word-column button {
   width: 100%;
-  margin: 5px 0;
+  margin-bottom: 10px;
   padding: 8px;
   font-size: 1rem;
   background-color: #ffe066;
@@ -58,8 +51,29 @@ h1 {
   transition: background-color 0.2s;
 }
 
-.buttons button:hover {
+.word-column button:hover {
   background-color: #ffd633;
+}
+
+/* Word list under each button */
+.verb-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+/* Each word in the list */
+.verb {
+  margin: 5px 0;
+  padding: 4px 8px;
+  font-size: 0.95rem;
+}
+
+/* Highlight for selected word */
+.selected {
+  background-color: rgba(255, 215, 0, 0.4); /* light yellow */
+  font-weight: bold;
+  border-radius: 5px;
 }
 
 /* Story output section */
@@ -75,7 +89,8 @@ h1 {
 }
 
 /* Surprise & Reset Buttons */
-#surprise-btn, #reset-btn {
+#surprise-btn,
+#reset-btn {
   background-color: #9cff57;
   border: 2px solid #6cbf00;
   border-radius: 8px;
@@ -86,6 +101,7 @@ h1 {
   transition: background-color 0.2s;
 }
 
-#surprise-btn:hover, #reset-btn:hover {
+#surprise-btn:hover,
+#reset-btn:hover {
   background-color: #86ff33;
 }
